@@ -1,9 +1,9 @@
 import streamlit as st
-from datetime import date
+import datetime
 
 picture = st.camera_input("Take a picture")
 
-d = st.date_input("Day", date.now)
+d = st.date_input("Day", datetime.datetime.now())
 
 with st.form("my_form"):
     st.write("Inside the form")
